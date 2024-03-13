@@ -20,4 +20,4 @@ An evaluation of the public policy intervention designed by INAIL is proposed, w
 
 The uplift percentile distribution estimated from each model (horizontal axis) is plotted against the ATE estimated at each percentile threshold (vertical axis). Specifically, for each decile of the ITE distribution (horizontal axis), we compute the ATE (vertical axis). It is clear from the image that by sorting the dataset from the most responsive to the least responsive firms, a monotonic increase of the cumulative uplift is observed. Most of the models are able to accurately rank firms with respect to which the policy intervention is more effective, reducing the default probability up to 30% when the 10% of most responsive firms are selected. This is an interesting result since such a percentage represents a 10-folds increase in magnitude with respect to the overall bootstrapping ATE estimation.
 
-![alt text](https://github.com/BerardinoB/Public_Policy_Evaluation/blob/main/Images/Uplift_Curve.png)
+![alt text](https://github.com/BerardinoB/Public_Policy_Evaluation/blob/main/Images/Gain_Chart.png)
