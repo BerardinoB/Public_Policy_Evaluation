@@ -4,7 +4,7 @@
 ![alt text](https://github.com/BerardinoB/Public_Policy_Evaluation/blob/main/Images/Maps_Italy.png)
 
 ## Performance: Factual Results
-For a factual comparison of all the ML models, the ROC-AUC curve is reported below:
+in order to calculate the probability of corporate failure, a stratified 10-folds Cross-Validation (CV) procedure is implemented. We used CV aggregation or crogging to improve the generalization error estimate using our validation methods. The entire process is repeated 30 times and the obtained predictions averaged at the instance level in order to obtain reliable results. For all ML models, the same folds partitioning is used in order to guarantee fair comparisons. Cost sensitive learning is applied to deal with class imbalance by re-weighting the loss function toward the less represented. For the factual comparison of all the ML models, the ROC-AUC curve is reported below:
 
 ![alt text](https://github.com/BerardinoB/Public_Policy_Evaluation/blob/main/Images/ROC_Curve.png)
 
@@ -13,7 +13,7 @@ The highest classification score is obtained with RFSurvival which outperformed 
 ## Policy Evaluation: Average Treatment Effect (ATE)
 An evaluation of the public policy intervention designed by INAIL is proposed, which represents the primary aim of this work. In order to estimate the causal impact of the policy on the survival of Treated corporations, both a statistical and ML analysis is developed. Two different approaches for the calculation of the ATE are compared (see image below). A penalized CPH and a Non-Parametric Bootstrap method are implemented for the estimation of the ATE (vertical axis). For the CPH, different penalization terms in the range between 0.4 and 4 at steps of 0.1 are used (bottom horizontal axis). The black line represents the ATE estimated from the CPH at different penalization terms while in gray the respective 95% confidence intervals. The red line represents the expected ATE over all possible penalization terms. The green histogram depicts the distribution of the ATE obtained from the bootstrapping procedure. The frequency for each bin is reported in the upper horizontal axis. The blue line represents the expected ATE of the bootstrapping distribution.
 
-![alt text](https://github.com/BerardinoB/Public_Policy_Evaluation/blob/main/Images/ROC_Curve.png)
+![alt text](https://github.com/BerardinoB/Public_Policy_Evaluation/blob/main/Images/ATE_Stat.png)
 
 
 ## Individual Treatment Effect and Uplift Modelling
